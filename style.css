@@ -1,0 +1,978 @@
+* {
+  color: black;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* NAVBAR FIXED TOP */
+nav.sticky {
+  position: relative;
+  transition: top 0s;
+  z-index: 100;
+}
+
+nav.sticky.sticky-active {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+/* AKHIR NAVBAR FIXED TOP */
+
+/* NAVBAR */
+#link-navbar:hover {
+  background-color: #04aa6d;
+  color: white;
+}
+
+#bootspaces:hover {
+  background-color: #ebebeb;
+  border-radius: 40px;
+}
+
+.tablink {
+  background-color: #282a35;
+  float: left;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  padding: 5px 15.9px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.tablink:hover {
+  background-color: #000;
+}
+
+.log-in {
+  background-color: #d9eee1;
+  border-radius: 0% 40px 40px 0%;
+  color: #000;
+  margin-top: 5px;
+}
+
+.log-in:hover {
+  background-color: #02482e;
+  border-radius: 0% 40px 40px 0%;
+  padding: 9px 18px;
+  margin-top: 5px;
+  color: white;
+}
+
+#sign-up {
+  padding: 9px 18px;
+  margin-top: 5px;
+  background-color: #04aa6d;
+  color: white;
+  border-radius: 40px;
+  position: relative;
+  margin-right: -20px;
+}
+
+#sign-up:hover {
+  background-color: #03915d;
+  color: white;
+  border-radius: 40px;
+}
+
+/* AKHIR NAVBAR */
+
+/* LEARN TO CODE */
+.bg-learn {
+  background-color: #282a35;
+}
+
+.learn-container {
+  background-color: #282a35;
+}
+
+.h1-learn {
+  font-size: 65px;
+  margin-top: 110px;
+}
+
+.h3-learn {
+  font-size: 21px;
+  color: #ffc0c7;
+}
+
+.bg-learn form input {
+  width: 32%;
+  height: 6%;
+}
+
+.bg-learn form button {
+  margin-left: 85%;
+}
+
+.search {
+  width: 30px;
+}
+
+#link-learn {
+  font-size: 23px;
+  color: white;
+}
+
+#link-learn:hover {
+  color: #04aa6d;
+}
+/* LEARN TO CODE */
+
+/* Button hiro */
+.green {
+  border: none;
+  background-color: #04aa6d;
+  color: white;
+  font-size: 18px;
+  margin: auto;
+  display: block;
+  width: 200px;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.yellow {
+  border: none;
+  background-color: #fff4a3;
+  color: black;
+  font-size: 18px;
+  margin: auto;
+  display: block;
+  width: 200px;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.black {
+  border: none;
+  background-color: #282a35;
+  color: white;
+  font-size: 18px;
+  margin: auto;
+  display: block;
+  width: 200px;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.pink {
+  border: none;
+  background-color: #ffc0c7;
+  color: black;
+  font-size: 18px;
+  margin: auto;
+  display: block;
+  width: 200px;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.white {
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  margin: auto;
+  display: block;
+  width: 200px;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 10px 10px;
+}
+
+.green:hover {
+  background-color: #03915d;
+}
+
+.black:hover {
+  background-color: #000;
+  color: white;
+}
+
+.yellow:hover {
+  background-color: #ffec5c;
+}
+
+.pink:hover {
+  background-color: #ffa5b0;
+}
+
+.white:hover {
+  background-color: #f3ecea;
+}
+
+#example {
+  font-size: 24px;
+}
+/* BUTTON HIRO */
+
+/* CARD */
+#card-border {
+  border-left: 5px solid green;
+}
+
+/* CARD */
+
+/* HIRO HTML */
+.bg-html {
+  background-color: #d9eee1;
+}
+
+.h1-html {
+  font-size: 100px;
+}
+
+.p-html {
+  font-size: 19px;
+}
+/* HIRO HTML */
+
+/* HIRO CSS */
+.bg-css {
+  background-color: #fff4a3;
+}
+/* HIRO CSS */
+
+/* HIRO JS */
+.bg-js {
+  background-color: #282a35;
+}
+
+.h1-js {
+  font-size: 70px;
+}
+/* HIRO JS */
+
+/* HIRO PYTHON */
+.bg-py {
+  background-color: #f3ecea;
+}
+/* HIRO PYTHON */
+
+/* HIRO SQL */
+.bg-sql {
+  background-color: #96d4d4;
+}
+/* HIRO SQL */
+
+/* 6 CARD BIG */
+.bg-cardbig {
+  background-color: #282a35;
+}
+
+#card-pink {
+  background-color: #ffc0c7;
+}
+
+#card-kuning {
+  background-color: #fff4a3;
+}
+
+#card-abu {
+  background-color: #ebebeb;
+}
+
+#card-ijomuda {
+  background-color: #d9eee1;
+}
+
+#card-ijotua {
+  background-color: #96d4d4;
+}
+
+#card-putih {
+  background-color: #f3ecea;
+}
+
+#card-pink2 {
+  background-color: #ffc0c7;
+  cursor: pointer;
+}
+
+#card-pink2:hover {
+  background-color: #ffa5b0;
+}
+
+#card-kuning2 {
+  background-color: #fff4a3;
+  cursor: pointer;
+}
+
+#card-kuning2:hover {
+  background-color: #ffec5c;
+}
+/* 6 CARD BIG */
+
+/* 4 CARD */
+#card-abu2 {
+  cursor: pointer;
+  background-color: #f3ecea;
+  padding: 10px 30px;
+}
+
+#card-abu2:hover {
+  background-color: white;
+}
+
+#h3-col {
+  padding: 10px 10px;
+}
+
+.card-abu-learn {
+  cursor: pointer;
+
+  background-color: #f3ecea;
+  border-radius: 5px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.card-abu-learn:hover {
+  background-color: white;
+}
+
+.card-hijau-learn {
+  cursor: pointer;
+
+  background-color: #d9eee1;
+  border-radius: 5px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.card-hijau-learn:hover {
+  background-color: #e0efe6;
+}
+
+.card-tosca-learn {
+  cursor: pointer;
+
+  background-color: #96d4d4;
+  border-radius: 5px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.card-tosca-learn:hover {
+  background-color: #b0eaea;
+}
+
+.card-pink-learn {
+  cursor: pointer;
+
+  background-color: #ffc0c7;
+  border-radius: 5px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.card-pink-learn:hover {
+  background-color: #fbced3;
+}
+
+.card-kuning-learn {
+  cursor: pointer;
+  background-color: #fff4a3;
+  border-radius: 5px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.card-kuning-learn:hover {
+  background-color: #fff8bf;
+}
+
+.card-learn-tosca {
+  cursor: pointer;
+
+  background-color: #96d4d4;
+  margin-top: 0px;
+  border-radius: 5px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.card-learn-tosca:hover {
+  background-color: #b0eaea;
+}
+
+.card-learn-kuning {
+  cursor: pointer;
+
+  background-color: #fff4a3;
+  margin-top: 0px;
+  border-radius: 5px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.card-learn-kuning:hover {
+  background-color: #fff8bf;
+}
+
+.card-learn-pink {
+  cursor: pointer;
+
+  background-color: #ffc0c7;
+  margin-top: 0px;
+  border-radius: 5px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.card-learn-pink:hover {
+  background-color: #fbced3;
+}
+
+.card-learn-abu {
+  cursor: pointer;
+
+  background-color: #f3ecea;
+  margin-top: 0px;
+  border-radius: 5px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.card-learn-abu:hover {
+  background-color: white;
+}
+
+.language-container {
+  padding: 20px;
+}
+
+.language {
+  background-color: #fff;
+  padding: 40px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.language h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#card-ijotua2 {
+  background-color: #96d4d4;
+  cursor: pointer;
+}
+
+#card-ijotua2:hover {
+  background-color: #b0eaea;
+}
+
+#card-putih2 {
+  background-color: #f3ecea;
+  cursor: pointer;
+}
+
+#card-putih2:hover {
+  background-color: white;
+}
+
+/* 4 CARD */
+
+/* CODE EDITOR */
+#h1-code {
+  font-size: 60px;
+}
+/* CODE EDITOR */
+
+/* W3SCHOOL SPACES */
+#h1-spaces {
+  font-size: 65px;
+}
+
+#h3-spaces {
+  font-size: 24px;
+  color: #ffc0c7;
+}
+
+#h3-spaces:hover {
+  color: #04aa6d;
+}
+
+.hideen {
+  display: none;
+}
+
+.link-code {
+  margin-left: 13.5%;
+}
+
+/* W3SCHOOL SPACES */
+
+/* HOW IT WORKS */
+.green2 {
+  border: none;
+  background-color: #04aa6d;
+  color: white;
+  font-size: 18px;
+  display: block;
+  margin: auto;
+  width: 20%;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 10px 50px;
+  text-decoration: none;
+}
+
+.green2:hover {
+  background-color: #03915d;
+}
+/* HOW IT WORKS */
+
+/* MY LEARNING */
+.bg-learning {
+  background-color: #d9eee1;
+}
+/* MY LEARNING */
+
+/* BECOME */
+#h1-pro {
+  font-size: 52px;
+}
+
+#h3-pro {
+  font-size: 25px;
+  color: #ffc0c7;
+}
+
+#link-pro {
+  color: white;
+}
+
+#link-pro:hover {
+  color: #04aa6d;
+}
+
+.list-users li {
+  color: white;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+.bg-learn ul {
+  margin-left: 35%;
+}
+/* BECOME */
+
+/* PICKER */
+.bg-picker {
+  background-color: #f3ecea;
+}
+
+.link-color img:hover {
+  filter: opacity(60%);
+}
+
+#h4-picker {
+  font-size: 20px;
+}
+/* PICKER */
+
+/* CODE GAME */
+.bg-game {
+  background-color: #96d4d4;
+}
+
+.h1-game {
+  font-family: "Freckle Face", "cursive";
+  font-size: 60px;
+}
+
+.h2-game {
+  font-family: "Freckle Face", "cursive";
+}
+
+.bg-game img:hover {
+  filter: opacity(60%);
+}
+
+/* CODE GAME */
+
+/* Exercises and Quizzes */
+.h1-exe {
+  font-size: 65px;
+}
+
+#card-quiz-1 {
+  background-color: #04aa6d;
+  cursor: pointer;
+}
+
+#card-quiz-1:hover {
+  background-color: #03915d;
+}
+
+#card-quiz-2 {
+  background-color: #fff4a3;
+  cursor: pointer;
+}
+
+#card-quiz-2:hover {
+  background-color: #ffec5c;
+}
+/* Exercises and Quizzes */
+
+/* WEB TEMPLATES */
+.bg-web {
+  background-color: #e7e9eb;
+}
+
+.img-web {
+  width: 80%;
+}
+
+.black2 {
+  border: none;
+  background-color: #282a35;
+  color: white;
+  font-size: 18px;
+  margin: auto;
+  display: block;
+  width: 60%;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 15px 20px;
+}
+
+.black2:hover {
+  background-color: #000;
+}
+/* WEB TEMPLATES */
+
+/* KICKSTART */
+#h2-kick {
+  color: #ffc0c7;
+  font-size: 62px;
+}
+
+#p-kick {
+  color: #ffc0c7;
+  font-size: 52px;
+}
+
+.svg-1 {
+  width: 50%;
+}
+
+.svg-2 {
+  width: 35%;
+}
+
+.svg-container {
+  position: absolute;
+  right: 0;
+}
+
+.green1 {
+  border: none;
+  background-color: #04aa6d;
+  color: white;
+  font-size: 18px;
+  display: block;
+  width: 15%;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 20px 50px;
+  text-decoration: none;
+}
+
+.green1:hover {
+  background-color: #03915d;
+}
+/* KICKSTART */
+
+/* HOW TO SECTION */
+#h2-how {
+  font-size: 60px;
+}
+
+#h4-how {
+  font-size: 20px;
+}
+
+#h6-how {
+  font-size: 16px;
+}
+
+.tiang {
+  width: 50px;
+  height: 80px;
+  background-color: #282a35;
+}
+
+.black1 {
+  border: none;
+  background-color: #282a35;
+  color: white;
+  font-size: 18px;
+  margin: auto;
+  display: block;
+  width: 35%;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 15px 20px;
+}
+
+.black1:hover {
+  background-color: #000;
+}
+/* HOW TO SECTION */
+
+/* FOLLOW US */
+#follow svg {
+  cursor: pointer;
+}
+/* FOLLOW US */
+
+/* BUTTON FOOTER */
+#btn-footer .btn {
+  background-color: #282a35;
+  color: white;
+}
+
+#btn-footer .btn:hover {
+  background-color: #03915d;
+}
+
+/* BUTTON FOOTER */
+
+/* LINK FOOTER */
+#link-foo h5 {
+  font-size: 18px;
+}
+
+#link-foo a {
+  font-size: 12px;
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+#link-foo a:hover {
+  color: #04aa6d;
+  text-decoration: underline;
+}
+/* LINK FOOTER */
+
+/* FOOTER */
+#footer .link-me {
+  color: #000;
+  opacity: 50%;
+  font-size: 12px;
+}
+
+#footer a {
+  color: #000;
+  text-decoration: none;
+  opacity: 80%;
+}
+
+#footer a:hover {
+  color: #04aa6d;
+}
+
+#privacy {
+  font-size: 14px;
+}
+
+#footer {
+  opacity: 80%;
+}
+/* FOOTER */
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+  .hide {
+    display: none;
+  }
+
+  #img-editor {
+    width: 100%;
+  }
+
+  #img-spaces {
+    width: 100%;
+  }
+
+  #how-spaces {
+    width: 100%;
+  }
+
+  #img-learning {
+    width: 100%;
+  }
+
+  .img-web {
+    width: 100%;
+  }
+
+  #img-how {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 820px) {
+  .hide2 {
+    display: none;
+  }
+
+  .hide-card {
+    margin-left: 20%;
+  }
+
+  .hide-card2 {
+    width: 100%;
+  }
+
+  .black1 {
+    width: 70%;
+  }
+
+  .green1 {
+    width: 28%;
+  }
+
+  .green2 {
+    width: 40%;
+  }
+
+  .link-code {
+    margin-left: 0%;
+  }
+
+  .bg-learn ul {
+    margin-left: 20%;
+  }
+
+  .bg-learn form input {
+    width: 64%;
+    margin-left: 8%;
+    height: 3.6%;
+  }
+
+  .bg-learn form button {
+    margin-left: 78%;
+  }
+
+  #img-editor {
+    width: 100%;
+  }
+
+  #img-spaces {
+    width: 100%;
+  }
+
+  #how-spaces {
+    width: 100%;
+  }
+
+  #img-learning {
+    width: 100%;
+  }
+
+  .img-web {
+    width: 100%;
+  }
+
+  #img-how {
+    width: 100%;
+  }
+
+  .card1 {
+    width: 35rem;
+    height: 27rem;
+    background-color: #e7e9eb;
+  }
+
+  .card2 {
+    width: 23rem;
+    height: 17rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hide-card {
+    display: none;
+  }
+
+  .hide-card2 {
+    display: none;
+  }
+
+  .black1 {
+    width: 70%;
+  }
+
+  .green1 {
+    font-size: 15px;
+    width: 50%;
+  }
+
+  .green2 {
+    width: 70%;
+  }
+
+  .link-code {
+    margin-left: 0%;
+  }
+
+  .black2 {
+    width: 80%;
+    margin-top: 10%;
+  }
+
+  .bg-learn ul {
+    margin-left: -2%;
+  }
+
+  .bg-learn form input {
+    width: 70%;
+    margin-left: 8%;
+    height: 5.2%;
+  }
+
+  .bg-learn form button {
+    margin-left: 74%;
+  }
+
+  #img-editor {
+    width: 100%;
+  }
+
+  #img-spaces {
+    width: 100%;
+  }
+
+  #how-spaces {
+    width: 100%;
+  }
+
+  #img-learning {
+    width: 100%;
+  }
+
+  .img-web {
+    width: 100%;
+  }
+
+  #img-how {
+    width: 100%;
+  }
+
+  .hideen {
+    display: block;
+  }
+}

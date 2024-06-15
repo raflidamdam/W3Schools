@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/Icon.svg" />
+    <title>W3Schools Online Web Tutorials</title>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="sticky">
+      <nav class="navbar navbar-expand-lg bg-body-tertiarys">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/Icon.svg" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link dropdown-toggle"
+                  id="link-navbar"
+                  aria-current="page"
+                  href="#"
+                  >Tutorials</a
+                >
+              </li>
+              <li class="nav-item" id="link-navbar">
+                <a
+                  class="nav-link dropdown-toggle"
+                  id="link-navbar"
+                  aria-current="page"
+                  href="#"
+                  >Exercises</a
+                >
+              </li>
+              <li class="nav-item dropdown" id="link-navbar">
+                <a
+                  class="nav-link dropdown-toggle"
+                  id="link-navbar"
+                  aria-current="page"
+                  href="#"
+                  >Get Certified</a
+                >
+              </li>
+              <li class="nav-item" id="link-navbar">
+                <a
+                  class="nav-link dropdown-toggle"
+                  id="link-navbar"
+                  aria-current="page"
+                  href="#"
+                  >Services</a
+                >
+              </li>
+            </ul>
+            <button class="btn ms-1" type="button" id="bootspaces">
+              <svg
+                width="12"
+                height="16"
+                viewBox="0 0 12 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.65723 6.24707C6.76704 5.91764 7.233 5.91765 7.34281 6.24707L7.98828 8.1835C8.276 9.04666 8.95332 9.72399 9.81648 10.0117L11.7529 10.6572C12.0824 10.767 12.0824 11.233 11.7529 11.3428L9.81649 11.9883C8.95332 12.276 8.27599 12.9533 7.98828 13.8165L7.34281 15.7529C7.233 16.0823 6.76704 16.0823 6.65723 15.7529L6.01173 13.8165C5.72401 12.9533 5.04669 12.276 4.18353 11.9883L2.24707 11.3428C1.91764 11.233 1.91764 10.767 2.24707 10.6572L4.18353 10.0117C5.04669 9.72399 5.72401 9.04667 6.01173 8.18352L6.65723 6.24707Z"
+                  fill="#9763f6"
+                ></path>
+                <path
+                  d="M2.79434 1.14824C2.86023 0.950586 3.1398 0.950587 3.20569 1.14824L3.59297 2.3101C3.7656 2.828 4.172 3.2344 4.6899 3.40703L5.85177 3.79432C6.04942 3.86021 6.04942 4.13978 5.85177 4.20567L4.6899 4.59296C4.172 4.76559 3.7656 5.17199 3.59297 5.68989L3.20569 6.85176C3.13981 7.04941 2.86023 7.04942 2.79434 6.85176L2.40704 5.68988C2.23441 5.17198 1.82801 4.76559 1.31012 4.59296L0.148241 4.20567C-0.0494137 4.13978 -0.0494138 3.86021 0.148241 3.79432L1.31012 3.40703C1.82802 3.2344 2.23441 2.82801 2.40704 2.31011L2.79434 1.14824Z"
+                  fill="#9763f6"
+                ></path>
+                <path
+                  d="M9.8629 0.0988265C9.90682 -0.032943 10.0932 -0.0329419 10.1371 0.098828L10.3953 0.873401C10.5104 1.21867 10.7813 1.4896 11.1266 1.60469L11.9012 1.86288C12.0329 1.9068 12.0329 2.09319 11.9012 2.13711L11.1266 2.39531C10.7813 2.51039 10.5104 2.78133 10.3953 3.12659L10.1371 3.90117C10.0932 4.03294 9.90682 4.03294 9.8629 3.90117L9.6047 3.12659C9.48961 2.78132 9.21868 2.5104 8.87342 2.39531L8.09883 2.13711C7.96706 2.09319 7.96706 1.9068 8.09883 1.86288L8.87342 1.60469C9.21868 1.4896 9.48961 1.21867 9.6047 0.873408L9.8629 0.0988265Z"
+                  fill="#9763f6"
+                ></path>
+              </svg>
+              Bootcamps
+            </button>
+            <button class="btn ms-1 me-2" type="button" id="bootspaces">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="#04AA6D"
+                class="bi bi-gift"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z"
+                ></path>
+              </svg>
+              Spaces
+            </button>
+            <a href="blank.html" class="text-decoration-none" id="sign-up"
+              >Sign Up</a
+            >
+            <a
+              href="blank.html"
+              class="log-in text-decoration-none"
+              style="padding: 9px 18px 9px 30px"
+              >Log In</a
+            >
+          </div>
+        </div>
+      </nav>
+      <div class="link-nav text-white border-0 z-1">
+        <div class="hide2">
+          <a href="blank.html" class="tablink">HTML</a>
+          <a href="blank.html" class="tablink">CSS</a>
+          <a href="blank.html" class="tablink">JAVASCRIPT</a>
+          <a href="blank.html" class="tablink">SQL</a>
+          <a href="blank.html" class="tablink">PYTHON</a>
+          <a href="blank.html" class="tablink">JAVA</a>
+          <a href="blank.html" class="tablink">PHP</a>
+          <a href="blank.html" class="tablink">HOW TO</a>
+          <a href="blank.html" class="tablink">W3.CSS</a>
+          <a href="blank.html" class="tablink">C</a>
+          <a href="blank.html" class="tablink">C++</a>
+          <a href="blank.html" class="tablink">C#</a>
+          <a href="blank.html" class="tablink">BOOTSTRAP</a>
+          <a href="blank.html" class="tablink">REACT</a>
+          <div class="hide">
+            <a href="blank.html" class="tablink">MY SQL</a>
+            <a href="blank.html" class="tablink">JQUERY</a>
+            <a href="blank.html" class="tablink">EXCEL</a>
+            <a href="blank.html" class="tablink">XML</a>
+            <a href="blank.html" class="tablink">DJANGO</a>
+            <a href="blank.html" class="tablink">NODE</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- AKHIR NAVBAR -->
+
+    <!-- LEARN TO CODE -->
+    <div class="bg-learn">
+      <div class="container text-center learn-container">
+        <div class="row">
+          <div class="col-12">
+            <div class="mt-5">
+              <h1 class="h1-learn text-white fw-bold">Learn to Code</h1>
+              <h3 class="h3-learn fw-bold mt-4">
+                With the world's largest web developer site.
+              </h3>
+              <form action="">
+                <div class="mt-5 col-lg-5 col-md-12 mx-auto d-flex">
+                  <input
+                    type="text"
+                    class="form-control rounded-pill px-4 py-1 position-absolute"
+                    id="exampleInputEmail1"
+                    placeholder="Search our tutorials, e.g. HTML"
+                  />
+                  <button
+                    type="submit"
+                    class="btn btn-success rounded-end-pill px-4 position-relative"
+                  >
+                    <img src="images/search.svg" alt="" class="search" />
+                  </button>
+                </div>
+              </form>
+              <div class="mt-5 mb-5">
+                <a href="" class="fw-medium" id="link-learn"
+                  >Not Sure Where To Begin?</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg
+      style="background-color: #d9eee1"
+      width="100%"
+      height="70"
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+    >
+      <path
+        id="wavepath"
+        d="M0,0  L110,0C35,150 35,0 0,100z"
+        fill="#282A35"
+      ></path>
+    </svg>
+    <!-- LEARN TO CODE -->
+
+    <!-- HIRO HTML -->
+    <div class="bg-html">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-7 col-md-12 text-center mt-5 mb-5 align-items-center"
+          >
+            <h1 class="h1-html fw-bold mt-lg-0">HTML</h1>
+            <p class="p-html fw-medium mt-4">
+              The language for building web pages
+            </p>
+            <button class="green fw-medium">Learn HTML</button>
+            <br />
+            <button class="yellow fw-medium">Video Tutorial</button>
+            <br />
+            <button class="black fw-medium">HTML Reference</button>
+            <br />
+            <button class="pink fw-medium">Get Certified</button>
+            <br />
+          </div>
+          <div class="col-lg-5 col-md-12 mt-lg-5 mt-lg-0 mb-5">
+            <div class="hide-card">
+              <div
+                class="card shadow"
+                style="width: 25rem; height: 29rem; background-color: #e7e9eb"
+              >
+                <div class="card-body">
+                  <h5 class="card-title mt-3 mb-3 fw-bold" id="example">
+                    HTML Example:
+                  </h5>
+                  <div
+                    class="card border border-start"
+                    style="width: 23rem; height: 19rem"
+                  >
+                    <div class="card-body" id="card-border"></div>
+                  </div>
+                  <a
+                    href="#"
+                    class="btn btn-success rounded-pill mt-4 px-5 py-2 fw-bold"
+                    >Try it Yourself</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- HIRO HTML -->
+
+    <!-- HIRO CSS -->
+    <div class="bg-css">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-7 col-md-12 text-center mt-5 mb-5 align-items-center"
+          >
+            <h1 class="h1-html fw-bold mt-lg-4">CSS</h1>
+            <p class="p-html fw-medium mt-4">
+              The language for styling web pages
+            </p>
+            <button class="green fw-medium">Learn CSS</button>
+            <br />
+            <button class="black fw-medium">CSS Reference</button>
+            <br />
+            <button class="pink fw-medium">Get Certified</button>
+            <br />
+          </div>
+          <div class="col-lg-5 col-md-12 mt-lg-5 mt-lg-0 mb-5">
+            <div class="hide-card">
+              <div
+                class="card shadow"
+                style="width: 25rem; height: 27rem; background-color: #e7e9eb"
+              >
+                <div class="card-body">
+                  <h5 class="card-title mt-3 mb-3 fw-bold" id="example">
+                    CSS Example:
+                  </h5>
+                  <div
+                    class="card border border-start"
+                    style="width: 23rem; height: 17rem"
+                  >
+                    <div class="card-body" id="card-border"></div>
+                  </div>
+                  <a
+                    href="#"
+                    class="btn btn-success rounded-pill mt-4 px-5 py-2 fw-bold"
+                    >Try it Yourself</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- HIRO CSS -->
+
+    <!-- HIRO JAVASCRIPT -->
+    <div class="bg-js">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-7 col-md-12 text-center mt-5 mb-5 align-items-center"
+          >
+            <h1 class="h1-js fw-bold text-white mt-lg-4">JavaScript</h1>
+            <p class="p-html fw-medium mt-5 text-white">
+              The language for programming web pages
+            </p>
+            <button class="green fw-medium mt-4">Learn JavaScript</button>
+            <br />
+            <button class="white fw-medium">JavaScript Reference</button>
+            <br />
+            <button class="pink fw-medium">Get Certified</button>
+            <br />
+          </div>
+          <div class="col-lg-5 col-md-12 mt-lg-5 mt-lg-0 mb-5">
+            <div class="hide-card">
+              <div
+                class="card shadow"
+                style="width: 25rem; height: 27rem; background-color: #e7e9eb"
+              >
+                <div class="card-body">
+                  <h5 class="card-title mt-3 mb-3 fw-bold" id="example">
+                    CSS Example:
+                  </h5>
+                  <div
+                    class="card border border-start"
+                    style="width: 23rem; height: 17rem"
+                  >
+                    <div class="card-body" id="card-border"></div>
+                  </div>
+                  <a
+                    href="#"
+                    class="btn btn-success rounded-pill mt-4 px-5 py-2 fw-bold"
+                    >Try it Yourself</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- HIRO JAVASCRIPT -->
+
+    <!-- HIRO PYTHON -->
+    <div class="bg-py">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-7 col-md-12 text-center mt-5 mb-5 align-items-center"
+          >
+            <h1 class="h1-js fw-bold mt-lg-4">Python</h1>
+            <p class="p-html fw-medium mt-4">A popular programming language</p>
+            <button class="green fw-medium mt-4">Learn Python</button>
+            <br />
+            <button class="black fw-medium">Python Reference</button>
+            <br />
+            <button class="pink fw-medium">Get Certified</button>
+            <br />
+          </div>
+          <div class="col-lg-5 col-md-12 mt-lg-5 mt-lg-0 mb-5">
+            <div class="hide-card">
+              <div
+                class="card shadow"
+                style="width: 25rem; height: 27rem; background-color: #e7e9eb"
+              >
+                <div class="card-body">
+                  <h5 class="card-title mt-3 mb-3 fw-bold" id="example">
+                    Python Example:
+                  </h5>
+                  <div
+                    class="card border border-start"
+                    style="width: 23rem; height: 17rem"
+                  >
+                    <div class="card-body" id="card-border"></div>
+                  </div>
+                  <a
+                    href="#"
+                    class="btn btn-success rounded-pill mt-4 px-5 py-2 fw-bold"
+                    >Try it Yourself</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- HIRO PYTHON -->
+
+    <!-- HIRO SQL -->
+    <div class="bg-sql">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-7 col-md-12 text-center mt-5 mb-5 align-items-center"
+          >
+            <h1 class="h1-js fw-bold mt-lg-4">SQL</h1>
+            <p class="p-html fw-medium mt-4">
+              A language for accessing databases
+            </p>
+            <button class="green fw-medium mt-4">Learn SQL</button>
+            <br />
+            <button class="black fw-medium">SQL Reference</button>
+            <br />
+            <button class="pink fw-medium">Get Certified</button>
+            <br />
+          </div>
+          <div class="col-lg-5 col-md-12 mt-lg-5 mt-lg-0 mb-5">
+            <div class="hide-card">
+              <div
+                class="card shadow"
+                style="width: 25rem; height: 27rem; background-color: #e7e9eb"
+                id="card1"
+              >
+                <div class="card-body">
+                  <h5 class="card-title mt-3 mb-3 fw-bold" id="example">
+                    Python Example:
+                  </h5>
+                  <div
+                    class="card border border-start"
+                    style="width: 23rem; height: 17rem"
+                    id="card2"
+                  >
+                    <div class="card-body" id="card-border"></div>
+                  </div>
+                  <a
+                    href="#"
+                    class="btn btn-success rounded-pill mt-4 px-5 py-2 fw-bold"
+                    >Try it Yourself</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- HIRO SQL -->
+
+    <!-- 6 CARD BIG -->
+    <section class="bg-cardbig">
+      <div class="container-fluid">
+        <div class="row text-center gap-5 justify-content-center">
+          <div class="col-md-5 col-sm-12 mt-lg-5">
+            <div class="card text-bg-danger mb-3 mt-3">
+              <div class="card-body rounded" id="card-pink">
+                <h1 class="card-title fw-bold text-dark mt-lg-4">PHP</h1>
+                <p class="card-text mt-lg-4 fw-bold opacity-75">
+                  A web server programming language
+                </p>
+                <button class="btn black mt-lg-5 mb-lg-4">Learn PHP</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-12 mt-lg-5">
+            <div class="card text-bg-warning mb-3 mt-3">
+              <div class="card-body rounded" id="card-kuning">
+                <h1 class="card-title fw-bold text-dark mt-lg-4">jQuery</h1>
+                <p class="card-text mt-lg-4 fw-bold opacity-75">
+                  A JS library for developing web pages
+                </p>
+                <button class="btn black mt-lg-5 mb-lg-4">Learn jQuery</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-12">
+            <div class="card text-bg-info mb-3">
+              <div class="card-body rounded" id="card-abu">
+                <h1 class="card-title fw-bold text-dark mt-lg-4">Java</h1>
+                <p class="card-text mt-lg-4 fw-bold opacity-75">
+                  A programming language
+                </p>
+                <button class="btn black mt-lg-5 mb-lg-4">Learn Java</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-12">
+            <div class="card text-bg-success mb-3">
+              <div class="card-body rounded" id="card-ijomuda">
+                <h1 class="card-title fw-bold text-dark mt-lg-4">C++</h1>
+                <p class="card-text mt-lg-4 fw-bold opacity-75">
+                  A programming language
+                </p>
+                <button class="btn black mt-lg-5 mb-lg-4">Learn C++</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-12">
+            <div class="card text-bg-info mb-3">
+              <div class="card-body rounded" id="card-ijotua">
+                <h1 class="card-title fw-bold text-dark mt-lg-4">W3.CSS</h1>
+                <p class="card-text mt-lg-4 fw-bold opacity-75">
+                  A CSS framework for faster and better responsive web pages
+                </p>
+                <button class="btn black mt-lg-5 mb-lg-4">Learn W3.CSS</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-12">
+            <div class="card text-bg-success mb-3">
+              <div class="card-body rounded" id="card-putih">
+                <h1 class="card-title fw-bold text-dark mt-lg-4">Bootstrap</h1>
+                <p class="card-text mt-lg-4 fw-bold opacity-75">
+                  A CSS framework for designing better web pages
+                </p>
+                <button class="btn black mt-lg-5 mb-lg-4">
+                  Learn Bootstrap
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 6 CARD BIG -->
+
+    <!-- CARD 2&4 -->
+    <section class="bg-cardbig">
+      <div class="container-fluid">
+        <div class="row text-center gap-5 justify-content-center">
+          <div class="col-md-5 col-sm-12 mt-lg-5">
+            <div class="card mb-3 mt-lg-5">
+              <div class="card-body rounded" id="card-pink2">
+                <h3 class="card-title text-dark mt-lg-4 py-4 fw-bold">C</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-sm-12 mt-lg-5">
+            <div class="card mb-3 mt-lg-5">
+              <div class="card-body rounded" id="card-kuning2">
+                <h3 class="card-title text-dark mt-lg-4 py-4 fw-bold">C#</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  -->
+      <section class="container">
+        <div class="row language-container">
+          <div class="col-md-3 mb-lg-4">
+            <button class="language" id="card-putih2">
+              <h2>R</h2>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button class="language" id="card-ijomuda">
+              <h2>Kotlin</h2>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button class="language" id="card-ijotua2">
+              <h2>Node.js</h2>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button class="language" id="card-pink2">
+              <h2>React</h2>
+            </button>
+          </div>
+          <div class="col-md-3 mb-lg-4">
+            <button class="language" id="card-kuning2">
+              <h2>Json</h2>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button class="language" id="card-putih2">
+              <h2>Vue</h2>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button class="language" id="card-ijomuda">
+              <h2>My SQL</h2>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button class="language" id="card-ijotua2">
+              <h2>XML</h2>
+            </button>
+          </div>
+          <div class="col-md-3 mb-lg-4">
+            <button class="language" id="card-pink2">
+              <h2>Sass</h2>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button class="language" id="card-kuning2">
+              <h2>Icons</h2>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button class="language" id="card-putih2">
+              <h2>RWD</h2>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button class="language" id="card-ijomuda">
+              <h2>Graphics</h2>
+            </button>
+          </div>
+          <div class="col-md-3 mb-lg-4">
+            <button class="language" id="card-ijotua2">
+              <h2>SVG</h2>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button class="language" id="card-pink2">
+              <h2>Canvas</h2>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button class="language" id="card-kuning2">
+              <h2>Raspberry Pi</h2>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button class="language" id="card-putih2">
+              <h2>Cyber Security</h2>
+            </button>
+          </div>
+          <div class="col-md-3 mb-lg-4">
+            <button class="language" id="card-ijomuda">
+              <h2>Colors</h2>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button class="language" id="card-ijotua2">
+              <h2>Git</h2>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button class="language" id="card-pink2">
+              <h2>Matplotlib</h2>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button class="language" id="card-kuning2">
+              <h2>Numpy</h2>
+            </button>
+          </div>
+          <div class="col-md-3 mb-lg-4">
+            <button class="language" id="card-putih2">
+              <h2>Pandas</h2>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button class="language" id="card-ijomuda">
+              <h2>SciPy</h2>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button class="language" id="card-ijotua2">
+              <h2>ASP</h2>
+            </button>
+          </div>
+          <div class="col-md-3 mb-lg-4">
+            <button class="language" id="card-pink2">
+              <h2>Angular JS</h2>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button class="language" id="card-kuning2">
+              <h2>AppML</h2>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button class="language" id="card-putih2">
+              <h2>Go</h2>
+            </button>
+          </div>
+          <div class="col-md-3 mb-lg-4">
+            <button class="language" id="card-ijomuda">
+              <h2>JavaScript</h2>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button class="language" id="card-ijotua2">
+              <h2>TypeScript</h2>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button class="language" id="card-ijotua2">
+              <h2>Django</h2>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button class="language" id="card-kuning">
+              <h2>MongoDB</h2>
+            </button>
+          </div>
+          <div class="col-md-3 mb-lg-4">
+            <button class="language" id="card-putih2">
+              <h2>Statistics</h2>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button class="language" id="card-ijomuda">
+              <h2>Data Science</h2>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button class="language" id="card-ijomuda">
+              <h2>Typing Speed</h2>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button class="language" id="card-ijotua2">
+              <h2>How To</h2>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button class="language" id="card-kuning">
+              <h2>Code Game</h2>
+            </button>
+          </div>
+          <div class="col-md-3">
+            <button class="language" id="card-putih2">
+              <h2>Spaces</h2>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+      <section class="bg-cardbig">
+        <div class="container-fluid">
+          <div class="row text-center gap-5 justify-content-center">
+            <div class="col-md-5 col-sm-12">
+              <div class="card">
+                <div class="card-body rounded" id="card-ijotua2">
+                  <h3 class="card-title text-dark mt-lg-4 py-4 fw-bold">
+                    Excel
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-sm-12">
+              <div class="card">
+                <div class="card-body rounded" id="card-kuning2">
+                  <h3 class="card-title text-dark mt-lg-4 py-4 fw-bold">
+                    Google Sheets
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-sm-12">
+              <div class="card">
+                <div class="card-body rounded" id="card-pink2">
+                  <h3 class="card-title text-dark mt-lg-4 py-4 fw-bold">
+                    Machine Learning
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-sm-12">
+              <div class="card">
+                <div class="card-body rounded" id="card-putih2">
+                  <h3 class="card-title text-dark mt-lg-4 py-4 fw-bold">
+                    Artificial Intelligence
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- CARD 2&4 -->
+
+    <!-- CODE EDITOR -->
+    <div class="bg-learn">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mt-5">
+            <h1 class="text-white fw-bold text-center" id="h1-code">
+              Code Editor
+            </h1>
+            <h5 class="text-white mt-4 fw-medium text-center">
+              With our online code editor, you can edit code and view the result
+              in your browser
+            </h5>
+            <div class="text-center">
+              <img
+                src="images/codeeditor.gif"
+                alt=""
+                class="mt-5"
+                id="img-editor"
+              />
+            </div>
+            <br />
+            <div class="link-code">
+              <a href="blank.html" class="btn btn-success mt-3 fw-medium">
+                Try Frontend Editor (HTML/CSS/JS)
+              </a>
+              <br />
+              <a href="blank.html" class="btn btn-warning mt-3 fw-medium">
+                Try Backend Editor (Python/PHP/Java/C..)
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CODE EDITOR -->
+
+    <!-- W3SCHOOL SAPCES -->
+    <div class="bg-learn">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-12 mt-5">
+            <h1 class="text-white fw-bold mt-5" id="h1-spaces">
+              W3School Spaces
+            </h1>
+            <h3 class="text-white mt-lg-4" id="h3-spaces">
+              If you want to create your own website, check out
+              <a href="" class="" id="h3-spaces">W3School Spaces</a>.
+            </h3>
+            <h3 class="text-white mt-lg-3" id="h3-spaces">
+              It is free to use, and does not require any setup:
+            </h3>
+            <div class="gif-spaces mt-lg-5">
+              <img
+                src="images/dynamicspaces.gif"
+                alt=""
+                id="img-spaces"
+                class="mt-md-5 mb-sm-5"
+              />
+
+              <div class="hideen"><br /><br /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- W3SCHOOL SAPCES -->
+
+    <!-- HOW IT WORKS -->
+    <section class="hide-card2">
+      <div class="bg-learn">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-12 mt-lg-5">
+              <img
+                src="images/how-spaces-works3.png"
+                alt=""
+                id="how-spaces"
+                class="mt-lg-5 mt-md-5"
+              />
+              <br />
+              <a
+                href="blank.html"
+                class="green2 mt-lg-5 mt-md-5 align-self-lg-start rounded-pill px-lg-5 fw-bold mb-lg-5"
+                >Learn More</a
+              >
+              <br /><br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- HOW IT WORKS -->
+
+    <!-- MY LEARNING -->
+    <div class="bg-learning">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-12 mt-lg-5">
+            <h1 class="mt-lg-5 mt-md-5 fw-bold" id="h1-spaces">My Learning</h1>
+            <h4 class="mt-lg-5 mt-lg-5" id="h4-learning">
+              Track your progress with our <strong>free</strong> "My Learning"
+              program.
+            </h4>
+            <h4 class="mt-lg-3" id="h4-learning">
+              Log in to your account, and start earning points!
+            </h4>
+            <img
+              src="images/myl-green-off.png"
+              alt=""
+              class="mt-lg-3 mt-md-5"
+              id="img-learning"
+            />
+            <br />
+            <a
+              href="blank.html"
+              class="green2 rounded-pill mt-lg-4 mt-md-4 py-lg-2 px-lg-5 mb-lg-5"
+              >Sign Up for free</a
+            ><br /><br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MY LEARNING -->
+
+    <!-- BECOME A PRO -->
+    <div class="bg-learn">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mt-lg-5">
+            <h1
+              class="text-white fw-bold mt-lg-5 mt-md-5 text-center"
+              id="h1-pro"
+            >
+              Become a PRO User
+            </h1>
+            <h3 class="mt-lg-3 text-center" id="h3-pro">
+              And unlock powerful features:
+            </h3>
+            <ul class="list-users mt-lg-5">
+              <li>
+                <img
+                  src="https://www.w3schools.com/spaces/files/check3.db67d31e.svg"
+                  alt="ceklis"
+                />
+                Browse W3Schools <strong class="text-white">without ads</strong>
+              </li>
+              <li class="mt-lg-2">
+                <img
+                  src="https://www.w3schools.com/spaces/files/check3.db67d31e.svg"
+                  alt="ceklis"
+                />
+                Website hosting (Includes
+                <a href="#" id="link-pro">Spaces</a> PRO)
+              </li>
+              <li class="mt-lg-2">
+                <img
+                  src="https://www.w3schools.com/spaces/files/check3.db67d31e.svg"
+                  alt="ceklis"
+                />
+                Access to our
+                <a href="blank.html" id="link-pro">HTML Video Tutorial</a>
+              </li>
+            </ul>
+            <div class="text-center">
+              <a
+                href="blank.html"
+                class="green2 rounded-pill fw-medium mt-lg-5 mt-md-3 mb-md-0 py-lg-2 px-lg-5"
+                >Learn More</a
+              >
+            </div>
+            <br /><br /><br /><br /><br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- BECOME A PRO -->
+
+    <!-- COLOR PICKER -->
+    <div class="bg-picker">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-12 mt-lg-5">
+            <br />
+            <h1 class="fw-bold" id="h1-spaces">Color Picker</h1>
+            <h4 class="fw-medium mt-lg-4" id="h4-picker">
+              W3Schools' famous color picker:
+            </h4>
+            <a href="blank.html" class="link-color"
+              ><img
+                src="images/colorpicker.png"
+                alt=""
+                class="mt-lg-4 mt-md-5" /></a
+            ><br /><br /><br /><br /><br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- COLOR PICKER -->
+
+    <!-- CODE GAME -->
+    <div class="bg-game">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-12 mt-lg-5">
+            <br />
+            <h1 class="h1-game fw-medium">Code Game</h1>
+            <h2 class="h2-game">Help the Lynx collect pine cones!</h2>
+            <a href="blank.html"
+              ><img src="images/w3lynx_200.png" alt="" class="mt-lg-4" /></a
+            ><br />
+            <a
+              href="blank.html"
+              class="black link-underline link-underline-opacity-0 mt-lg-5 mt-md-5 fw-semibold"
+              >Play Game</a
+            ><br /><br /><br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CODE GAME -->
+
+    <!-- EXERCISES -->
+    <div class="bg-learn">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-12 mt-lg-5">
+            <br />
+            <h1 class="h1-exe text-white fw-bold">Exercises and Quizzes</h1>
+            <h4 class="text-white fw-semibold mt-lg-4" id="h4-picker">
+              Test your skills!
+            </h4>
+            <div class="d-flex justify-content-center gap-sm-5 mt-5">
+              <div class="col-md-5 col-sm-12">
+                <div class="card mb-3 border-0">
+                  <div class="card-body rounded" id="card-quiz-1">
+                    <h3 class="card-title text-dark mt-lg-4 py-5 fw-bold">
+                      Exercises
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-sm-12">
+                <div class="card mb-3 border-0">
+                  <div class="card-body rounded" id="card-quiz-2">
+                    <h3 class="card-title text-dark mt-lg-4 py-5 fw-bold">
+                      Quizzes
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br /><br /><br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- EXERCISES -->
+
+    <!-- WEB TEMPLATES -->
+    <div class="bg-web">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="fw-bold mt-lg-5 mt-md-5" id="h1-spaces">
+              Web Templates
+            </h1>
+            <h4 class="fw-medium mt-lg-4" id="h4-picker">
+              Browse our selection of <strong>free</strong> responsive HTML
+              Templates
+            </h4>
+            <a href="blank.html"
+              ><img
+                src="images/w3css_templates.jpg"
+                alt=""
+                class="mt-lg-5 img-web"
+            /></a>
+            <a
+              href="blank.html"
+              class="black2 link-underline link-underline-opacity-0 mt-lg-5 mt-md-5"
+              >Browser Templates</a
+            ><br /><br /><br /><br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- WEB TEMPLATES -->
+
+    <!-- KICKSTART -->
+    <div class="bg-learn">
+      <div class="container text-start">
+        <div class="row">
+          <div class="col-lg-12 mt-lg-5">
+            <h2 class="mt-lg-5 mt-md-5" id="h2-kick">Kickstart your career</h2>
+            <p class="p-kickstart mt-lg-5" id="p-kick">
+              Get certified by completing a course
+            </p>
+            <a href="blank.html" class="green1 rounded-pill mt-lg-5"
+              >Get Started</a
+            >
+            <!-- <div class="d-flex svg-container">
+              <svg
+                class="svg-1"
+                id="w3_cert_arrow_default"
+                viewBox="0 0 170 143"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.7747 42.7064C9.7747 42.7064 19.5575 77.2951 44.4558 84.8113C62.0225 90.1142 81.0061 80.1196 77.791 68.3309C76.0904 62.0955 69.0574 62.4735 65.5106 65.8444C59.1003 71.9368 67.8591 89.7423 77.9205 96.1324C112.816 118.295 161.943 84.5867 161.943 84.5867"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                ></path>
+                <path
+                  d="M159.804 93.8429L162.704 84.4917L152.715 80.8293"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              <svg
+                class="svg-2"
+                id="w3_cert_badge_default"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 300 300"
+              >
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #04aa6b;
+                    }
+                    .cls-2 {
+                      font-size: 23px;
+                    }
+                    .cls-2,
+                    .cls-3,
+                    .cls-4 {
+                      fill: #fff;
+                    }
+                    .cls-2,
+                    .cls-3 {
+                      font-family: RobotoMono-Medium, Roboto Mono;
+                      font-weight: 500;
+                    }
+                    .cls-3 {
+                      font-size: 20.08px;
+                    }
+                  </style>
+                </defs>
+                <circle
+                  class="cls-1"
+                  cx="150"
+                  cy="150"
+                  r="146.47"
+                  transform="translate(-62.13 150) rotate(-45)"
+                ></circle>
+                <text
+                  class="cls-2"
+                  transform="translate(93.54 63.89) rotate(-29.5)"
+                >
+                  w
+                </text>
+                <text
+                  class="cls-2"
+                  transform="translate(107.13 56.35) rotate(-20.8)"
+                >
+                  3
+                </text>
+                <text
+                  class="cls-2"
+                  transform="matrix(0.98, -0.21, 0.21, 0.98, 121.68, 50.97)"
+                >
+                  s
+                </text>
+                <text
+                  class="cls-2"
+                  transform="translate(136.89 47.84) rotate(-3.47)"
+                >
+                  c
+                </text>
+                <text
+                  class="cls-2"
+                  transform="translate(152.39 47.03) rotate(5.12)"
+                >
+                  h
+                </text>
+                <text
+                  class="cls-2"
+                  transform="translate(167.85 48.54) rotate(13.72)"
+                >
+                  o
+                </text>
+                <text
+                  class="cls-2"
+                  transform="translate(182.89 52.35) rotate(22.34)"
+                >
+                  o
+                </text>
+                <text
+                  class="cls-2"
+                  transform="matrix(0.86, 0.52, -0.52, 0.86, 197.18, 58.36)"
+                >
+                  l
+                </text>
+                <text
+                  class="cls-2"
+                  transform="matrix(0.77, 0.64, -0.64, 0.77, 210.4, 66.46)"
+                >
+                  s
+                </text>
+                <text
+                  class="cls-3"
+                  transform="translate(35.51 186.66) rotate(69.37)"
+                ></text>
+                <text
+                  class="cls-3"
+                  transform="matrix(0.47, 0.88, -0.88, 0.47, 41.27, 201.28)"
+                >
+                  C
+                </text>
+                <text
+                  class="cls-3"
+                  transform="matrix(0.58, 0.81, -0.81, 0.58, 48.91, 215.03)"
+                >
+                  E
+                </text>
+                <text
+                  class="cls-3"
+                  transform="matrix(0.67, 0.74, -0.74, 0.67, 58.13, 227.36)"
+                >
+                  R
+                </text>
+                <text
+                  class="cls-3"
+                  transform="translate(69.16 238.92) rotate(39.44)"
+                >
+                  T
+                </text>
+                <text
+                  class="cls-3"
+                  transform="matrix(0.85, 0.53, -0.53, 0.85, 81.47, 248.73)"
+                >
+                  I
+                </text>
+                <text
+                  class="cls-3"
+                  transform="translate(94.94 256.83) rotate(24.36)"
+                >
+                  F
+                </text>
+                <text
+                  class="cls-3"
+                  transform="translate(109.34 263.09) rotate(16.83)"
+                >
+                  I
+                </text>
+                <text
+                  class="cls-3"
+                  transform="translate(124.46 267.41) rotate(9.34)"
+                >
+                  E
+                </text>
+                <text
+                  class="cls-3"
+                  transform="translate(139.99 269.73) rotate(1.88)"
+                >
+                  D
+                </text>
+                <text
+                  class="cls-3"
+                  transform="translate(155.7 270.01) rotate(-5.58)"
+                ></text>
+                <text
+                  class="cls-3"
+                  transform="translate(171.32 268.24) rotate(-13.06)"
+                ></text>
+                <text
+                  class="cls-2"
+                  transform="translate(187.55 266.81) rotate(-21.04)"
+                >
+                  .
+                </text>
+                <text
+                  class="cls-3"
+                  transform="translate(203.27 257.7) rotate(-29.24)"
+                ></text>
+                <text
+                  class="cls-3"
+                  transform="translate(216.84 249.83) rotate(-36.75)"
+                ></text>
+                <text
+                  class="cls-3"
+                  transform="translate(229.26 240.26) rotate(-44.15)"
+                >
+                  2
+                </text>
+                <text
+                  class="cls-3"
+                  transform="translate(240.39 229.13) rotate(-51.62)"
+                >
+                  0
+                </text>
+                <text
+                  class="cls-3"
+                  transform="translate(249.97 216.63) rotate(-59.17)"
+                >
+                  2
+                </text>
+                <text
+                  class="cls-3"
+                  transform="matrix(0.4, -0.92, 0.92, 0.4, 257.81, 203.04)"
+                >
+                  3
+                </text>
+                <path
+                  class="cls-4"
+                  d="M196.64,136.31s3.53,3.8,8.5,3.8c3.9,0,6.75-2.37,6.75-5.59,0-4-3.64-5.81-8-5.81h-2.59l-1.53-3.48,6.86-8.13a34.07,34.07,0,0,1,2.7-2.85s-1.11,0-3.33,0H194.79v-5.86H217.7v4.28l-9.19,10.61c5.18.74,10.24,4.43,10.24,10.92s-4.85,12.3-13.19,12.3a17.36,17.36,0,0,1-12.41-5Z"
+                ></path>
+                <path
+                  class="cls-4"
+                  d="M152,144.24l30.24,53.86,14.94-26.61L168.6,120.63H135.36l-13.78,24.53-13.77-24.53H77.93l43.5,77.46.15-.28.16.28Z"
+                ></path>
+              </svg>
+            </div> -->
+            <br /><br /><br /><br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- KICKSTART -->
+
+    <!-- HOW TO SECTION -->
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-12">
+          <h2 class="mt-lg-5 mt-md-5 fw-bold" id="h2-how">How To Section</h2>
+          <h4 class="mt-lg-4 fw-bold" id="h4-how">
+            Code snippets for HTML, CSS and JavaScript
+          </h4>
+          <h6 class="mt-lg-4 fw-medium" id="h6-how">
+            For example, how to create a slideshow:
+          </h6>
+          <!-- <div class="card-code-how" style="background-color: #f1f1f1">
+            <div class="d-flex">
+              <div class="rounded" style="background-color: #ed594a"></div>
+              <div class="rounded" style="background-color: #fdd800"></div>
+              <div class="rounded" style="background-color: #5ac05a"></div>
+              <input type="text" disabled value="www.w3schools.com/howto/" />
+            </div>
+          </div> -->
+          <img
+            src="images/img_nature_wide.jpg"
+            alt=""
+            class="mt-lg-5"
+            id="img-how"
+          />
+          <!-- <div class="card-code-how2" style="background-color: #f1f1f1">
+            <div class="flex-how">
+              <div class="rounded-how" style="background-color: #717171"></div>
+              <div class="rounded-how"></div>
+              <div class="rounded-how"></div>
+            </div>
+          </div> -->
+          <div class="d-flex justify-content-center">
+            <div class="tiang"></div>
+          </div>
+          <a
+            href="blank.html"
+            class="black1 link-underline link-underline-opacity-0"
+            >Learn How to</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- HOW TO SECTION -->
+
+    <!-- FOLLOW US -->
+    <div class="container mt-lg-5" id="follow">
+      <br /><br />
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h5 class="fw-medium">Follow us:</h5>
+
+          <div class="d-flex justify-content-center gap-5 mt-lg-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1.5em"
+              viewBox="0 0 448 512"
+            >
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <style>
+                svg {
+                  fill: #282a35;
+                }
+              </style>
+              <path
+                d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"
+              />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1.5em"
+              viewBox="0 0 448 512"
+            >
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <style>
+                svg {
+                  fill: #282a35;
+                }
+              </style>
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+              />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1.5em"
+              viewBox="0 0 448 512"
+            >
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <style>
+                svg {
+                  fill: #282a35;
+                }
+              </style>
+              <path
+                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+              />
+            </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1.5em"
+              viewBox="0 0 640 512"
+            >
+              <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <style>
+                svg {
+                  fill: #282a35;
+                }
+              </style>
+              <path
+                d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOLLOW US -->
+
+    <!-- BUTTON FOOTER -->
+    <div class="container hide-card hide2" id="btn-footer">
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-between gap-3 mt-lg-5">
+          <div class="btn px-5" id="btn-follow">Spaces</div>
+          <div class="btn px-5">Upgarde</div>
+          <div class="btn px-5">Newsletter</div>
+          <div class="btn px-5">Get Certified</div>
+          <div class="btn px-5">Report Error</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="col-lg-12 my-3 d-flex">
+      <div
+        class="btn btn-dark col-md-8 col-lg-5 my-1 justify-item-center"
+        id="btn-follow"
+      >
+        Spaces
+      </div>
+      <div class="btn btn-dark col-md-8 col-lg-5 my-1">Upgarde</div>
+      <div class="btn btn-dark col-md-8 col-lg-5 my-1">Newsletter</div>
+      <div class="btn btn-dark col-md-8 col-lg-5 my-1">Get Certified</div>
+      <div class="btn btn-dark col-md-8 col-lg-5 my-1">Report Error</div>
+    </div> -->
+    <!-- BUTTON FOOTER -->
+
+    <!-- LINK FOOTER -->
+    <div class="container" id="link-foo">
+      <div class="row text-center mt-lg-5">
+        <div class="col-lg-3 col-md-6 col-sm-12 mt-md-5">
+          <h5 class="fw-semibold">Top Tutorials</h5>
+          <a href="blank.html">HTML Tutorial</a><br />
+          <a href="blank.html">CSS Tutorial</a> <br />
+          <a href="blank.html">JavaScript Tutorial</a> <br />
+          <a href="blank.html">How To Tutorial</a> <br />
+          <a href="blank.html">SQL Tutorial</a> <br />
+          <a href="blank.html">Python Tutorial</a> <br />
+          <a href="blank.html">W3.CSS Tutorial</a> <br />
+          <a href="blank.html">Bootstrap Tutorial</a> <br />
+          <a href="blank.html">PHP Tutorial</a> <br />
+          <a href="blank.html">Java Tutorial</a> <br />
+          <a href="blank.html">C++ Tutorial</a> <br />
+          <a href="blank.html">jQuery Tutorial</a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mt-md-5">
+          <h5 class="fw-semibold">Top Reference</h5>
+          <a href="blank.html">HTML Reference</a><br />
+          <a href="blank.html">CSS Reference</a> <br />
+          <a href="blank.html">JavaScript Reference</a> <br />
+          <a href="blank.html">SQL Reference</a> <br />
+          <a href="blank.html">Python Reference</a> <br />
+          <a href="blank.html">W3.CSS Reference</a> <br />
+          <a href="blank.html">Bootstrap Reference</a> <br />
+          <a href="blank.html">PHP Reference</a> <br />
+          <a href="blank.html">HTML Colors</a> <br />
+          <a href="blank.html">Java Reference</a> <br />
+          <a href="blank.html">Angular Reference</a> <br />
+          <a href="blank.html">jQuery Reference</a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mt-md-5">
+          <h5 class="fw-semibold">Top Examples</h5>
+          <a href="blank.html">HTML Examples</a><br />
+          <a href="blank.html">CSS Examples</a> <br />
+          <a href="blank.html">JavaScript Examples</a> <br />
+          <a href="blank.html">How To Examples</a> <br />
+          <a href="blank.html">SQL Examples</a> <br />
+          <a href="blank.html">Python Examples</a> <br />
+          <a href="blank.html">W3.CSS Examples</a> <br />
+          <a href="blank.html">Bootstrap Examples</a> <br />
+          <a href="blank.html">PHP Examples</a> <br />
+          <a href="blank.html">Java Examples</a> <br />
+          <a href="blank.html">XML Examples</a> <br />
+          <a href="blank.html">jQuery Examples</a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mt-md-5">
+          <h5 class="fw-semibold">Get Certified</h5>
+          <a href="blank.html">HTML Certified</a><br />
+          <a href="blank.html">CSS Certified</a> <br />
+          <a href="blank.html">JavaScript Certified</a> <br />
+          <a href="blank.html">Frond end Certified</a> <br />
+          <a href="blank.html">SQL Certified</a> <br />
+          <a href="blank.html">Python Certified</a> <br />
+          <a href="blank.html">PHP Certified</a> <br />
+          <a href="blank.html">jQuery Certified</a> <br />
+          <a href="blank.html">Java Certified</a> <br />
+          <a href="blank.html">C++ Certified</a> <br />
+          <a href="blank.html">C# Certified</a> <br />
+          <a href="blank.html">XML Certified</a>
+        </div>
+      </div>
+    </div>
+    <!-- LINK FOOTER -->
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container" id="footer">
+        <div class="row">
+          <div class="col-lg-12 justify-content-end d-flex mt-lg-4">
+            <div class="link-me mt-md-5">
+              <a href="">FORUM</a>|
+              <a href="">ABOUT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid" id="footer">
+        <div class="row mt-lg-3">
+          <div class="col-lg-12 text-center" id="privacy">
+            W3Schools is optimized for learning and training. Examples might be
+            simplified to improve reading and learning. Tutorials, references,
+            and examples are constantly reviewed to avoid errors, but we cannot
+            warrant full correctness <br />
+            of all content. While using W3Schools, you agree to have read and
+            accepted our <a href="blank.html">terms of use</a>,
+            <a href="blank.html"> cookie and privacy policy.</a>
+
+            <br /><br />
+            <a href="blank.html">Copyright 1999-2023</a> by Refsnes Data. All
+            Rights Reserved. <br />
+            <a href="blank.html">W3Schools is Powered by W3.CSS</a>
+            <br />
+            <img src="images/Icon.svg" alt="" class="mt-lg-5 mb-lg-5" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER -->
+
+    <link href="w3.css" rel="stylesheet" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.addEventListener("scroll", function () {
+        const nav = document.querySelector("nav.sticky");
+        nav.classList.toggle("sticky-active", window.scrollY > 0);
+      });
+    </script>
+  </body>
+</html>
